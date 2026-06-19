@@ -1,0 +1,195 @@
+SCHOOL RESULT MANAGEMENT SYSTEM
+
+1. INTRODUCTION
+
+The School Result Management System is a Java-based console application developed using JDBC and MySQL. The system is designed to manage student academic results efficiently. It allows users to add, view, search, update, and delete result records while automatically calculating percentage and grade based on marks entered.
+
+The project demonstrates the integration of Java with MySQL database and provides practical experience in database connectivity, CRUD operations, object-oriented programming, and input validation.
+
+2. OBJECTIVES
+
+* To develop a result management system using Java and MySQL.
+* To understand JDBC database connectivity.
+* To perform CRUD (Create, Read, Update, Delete) operations.
+* To automate percentage and grade calculation.
+* To implement data validation and error handling.
+* To provide an efficient way to manage student result records.
+
+3. TECHNOLOGIES USED
+
+Programming Language:
+
+* Java
+
+Database:
+
+* MySQL
+
+Connectivity:
+
+* JDBC (Java Database Connectivity)
+
+IDE/Editor:
+
+* Visual Studio Code
+
+Version Control:
+
+* Git
+* GitHub
+
+4. SYSTEM FEATURES
+
+* Add Result
+* View Results
+* Search Result by Roll Number
+* Search Result by Student Name
+* Update Result
+* Delete Result
+* Statistics Dashboard
+* Automatic Percentage Calculation
+* Automatic Grade Calculation
+* Input Validation
+
+5. DATABASE DESIGN
+
+Database Name:
+school_result_management
+
+Table Name:
+results
+
+Fields:
+
+1. roll_no
+
+   * Integer
+   * Primary Key
+   * Auto Increment
+
+2. student_name
+
+   * VARCHAR(100)
+
+3. subject1
+
+   * DOUBLE
+
+4. subject2
+
+   * DOUBLE
+
+5. subject3
+
+   * DOUBLE
+
+6. total
+
+   * DOUBLE
+
+7. percentage
+
+   * DOUBLE
+
+8. grade
+
+   * VARCHAR(5)
+
+SQL Table Structure:
+
+CREATE TABLE results (
+roll_no INT PRIMARY KEY AUTO_INCREMENT,
+student_name VARCHAR(100),
+subject1 DOUBLE,
+subject2 DOUBLE,
+subject3 DOUBLE,
+total DOUBLE,
+percentage DOUBLE,
+grade VARCHAR(5)
+);
+
+6. PROJECT STRUCTURE
+
+SchoolResultManagement
+
+src
+│
+├── database
+│   └── DBConnection.java
+│
+├── main
+│   └── Main.java
+│
+├── model
+│   └── Result.java
+│
+├── service
+│   └── ResultService.java
+│
+└── util
+└── GradeCalculator.java
+
+screenshots
+
+documentation
+
+README.md
+
+school_result_management.sql
+
+7. WORKING OF THE SYSTEM
+
+Step 1:
+User selects an option from the menu.
+
+Step 2:
+User enters student details and marks.
+
+Step 3:
+System calculates:
+
+* Total Marks
+* Percentage
+* Grade
+
+Step 4:
+Data is stored in MySQL database.
+
+Step 5:
+User can:
+
+* View all results
+* Search results
+* Update records
+* Delete records
+* View statistics
+
+8. STATISTICS MODULE
+
+The statistics feature displays:
+
+* Total Number of Results
+* Average Percentage
+* Highest Percentage
+* Lowest Percentage
+
+This helps in analyzing student performance.
+
+9. SCREENSHOTS
+
+Insert the following screenshots:
+
+* Main Menu
+* Add Result
+* View Results
+* Search Result by Roll Number
+* Search Result by Name
+* Update Result
+* Delete Result
+* Statistics Dashboard
+* Database Table
+* Project Structure
+
+10. CONCLUSION
+
+The School Result Management System successfully demonstrates the implementation of CRUD operations using Java, JDBC, and MySQL. The project provides a practical understanding of database connectivity, object-oriented programming, and result management. It is a useful application for maintaining student academic records efficiently and accurately.
